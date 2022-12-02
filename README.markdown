@@ -1,0 +1,17 @@
+# Aoc22
+
+## Usage
+
+## Installation
+
+## Author
+
+* Ryan Gannon (ryanmgannon@gmail.com)
+
+## Copyright
+
+Copyright (c) 2022 Ryan Gannon (ryanmgannon@gmail.com)
+
+## License
+
+Licensed under the MIT License.
