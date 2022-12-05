@@ -1,12 +1,16 @@
-# Aoc22
+# Advent of Code 2022
 
 ## Usage
 
+don't
+
 ## Installation
+
+don't
 
 ## Author
 
-* Ryan Gannon (ryanmgannon@gmail.com)
+* Me
 
 ## Copyright
 

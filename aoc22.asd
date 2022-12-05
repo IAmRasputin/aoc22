@@ -2,11 +2,14 @@
   :version "0.1.0"
   :author "Ryan Gannon"
   :license "MIT"
-  :depends-on ("alexandria")
-  :components ((:module "src"
+  :depends-on ("alexandria" "plump" "dexador" "cl-dotenv" "bobbin")
+  :serial t
+  :components ((:file "package")
+               (:module "src"
                 :components
-                ((:file "main"))))
-  :description ""
+                ((:file "utils")
+                 (:file "day-1"))))
+  :description "SSHHHASDHFGGGGGFFFFFFFf"
   :in-order-to ((test-op (test-op "aoc22/tests"))))
 
 (defsystem "aoc22/tests"
