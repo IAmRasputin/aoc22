@@ -23,4 +23,14 @@
                           (uiop:slurp-stream-lines s)))))
     (apply #'max (mapcar (lambda (elf)
                            (apply #'+ elf))
-                         values))))
+                         (group-elves values)))))
+
+(defun day-1-2 (input)
+  (let* ((values (mapcar (lambda (val)
+                           (if (equal val "")
+                               nil
+                               (parse-integer val)))
+                         (with-input-from-string (s input)
+                           (uiop:slurp-stream-lines s))))
+         (elves (sort (group-elves values) #'>)))
+    (apply #'+ (subseq elves 0 3))))
