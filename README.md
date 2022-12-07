@@ -2,7 +2,9 @@
 
 ## Usage
 
-don't
+Use the functions in utils.lisp to get input as a string.
+
+Prompt-downloading sorta works, but something is wonky about part-2.
 
 ## Installation
 
