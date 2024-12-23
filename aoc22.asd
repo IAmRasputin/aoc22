@@ -8,7 +8,8 @@
                (:module "src"
                 :components
                 ((:file "utils")
-                 (:file "day-1"))))
+                 (:file "day-1")
+                 (:file "day-2"))))
   :description "SSHHHASDHFGGGGGFFFFFFFf"
   :in-order-to ((test-op (test-op "aoc22/tests"))))
 

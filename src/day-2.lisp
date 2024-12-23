@@ -41,3 +41,32 @@
                          (:player-2 6)
                          (:draw 3)))))
       (list score-1 score-2))))
+
+(defun solve-round (opponent result)
+  (ccase play
+    (:rock (ccase res
+             (:draw :rock)
+             (:loss :scissors)
+             (:win :paper)))
+    (:paper (ccase res
+              ))
+    (:scissors (ccase res
+                 ))))
+
+
+(defun day-2-1 (input)
+  (with-input-from-string (in input)
+    (let* ((lines (uiop:slurp-stream-lines in))
+           (rounds (mapcar (lambda (line)
+                             (score-round (move-map (aref line 0))
+                                          (move-map (aref line 2))))
+                           lines))
+           (score-1 0)
+           (score-2 0))
+      (dolist (round rounds)
+        (incf score-1 (first round))
+        (incf score-2 (second round)))
+      score-2)))
+
+
+;; Part 2
